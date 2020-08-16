@@ -53,9 +53,9 @@
                     <input type="text" name="username" placeholder="Username"><br>
                     <input type="email" name="email" placeholder="Email"><br>
                     <input type="password" name="password1" placeholder="Password"><br>
-                    <input type="password" name="password2" placeholder="Confirm Password"><br><br><br>
+                    <input type="password" name="password2" placeholder="Confirm Password"><br><br>
                     <div style="text-align: left;">
-                        <button type="submit" class="btn btn-primary login-btn">Register</button>
+                        <button type="submit" class="btn btn-primary login-btn">Register</button><br>
                       </div>
 
                 </form>
@@ -63,9 +63,9 @@
 
                 <div>
                     {% for message in messages %}
-                    <h6>
-                        {{messages}}
-                    </h6>
+                    <h5>
+                        {{message}}
+                    </h5>
                     {% endfor %}
                 </div>
 
