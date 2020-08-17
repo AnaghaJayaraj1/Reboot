@@ -22,7 +22,7 @@ def login(request):
         if user is not None:
             auth.login(request, user)
            
-            return redirect("/")
+            return redirect("dashboard")
         else:
             
             messages.info(request, 'invalid credentials')
@@ -64,3 +64,7 @@ def register(request):
     else:
         return render (request, 'register.html')
 
+
+
+def dashboard(request):
+    return render (request, 'team_dashboard.html')
