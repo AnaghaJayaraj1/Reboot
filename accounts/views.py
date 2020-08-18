@@ -6,11 +6,10 @@ from django.contrib.auth import authenticate
 from django.views.decorators.cache import cache_page
 from django.views.decorators.csrf import csrf_protect
 
+
+
 #@cache_page(60 * 15)
 @csrf_protect
-
-# Create your views here.
-
 def login(request):
     
     if request.method == 'POST':
@@ -68,3 +67,7 @@ def register(request):
 
 def dashboard(request):
     return render (request, 'team_dashboard.html')
+
+
+def profile(request):
+    return render(request, 'profile.html')
